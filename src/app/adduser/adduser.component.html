@@ -1,0 +1,43 @@
+
+<div class="container">
+
+  <div class="row">
+    
+    <div class="col-md-12"> 
+      
+        
+        <!--/stories-->
+       
+        <div class="row">   
+           
+          <br>
+          <div class="col-md-5 col-sm-3 text-center">
+           
+          </div>
+          <div class="col-md-5 col-sm-9">
+          <br>
+            
+            <form method="POST" (ngSubmit)="addedUser()">
+              <label for="">Name</label>
+              <input type="text" class="form-control" placeholder="eg.John Doe" name="username" [(ngModel)]="addingUser.username">
+              <br>
+              <label for="">Email</label>
+              <input type="email" class="form-control" name="email" placeholder="example@gmail.com" [(ngModel)]="addingUser.email" id="">
+              <br>
+              <label for="">Phone number</label>
+              <input type="text" class="form-control" [(ngModel)]="addingUser.phnumber" placeholder="xxx-xxx-xxxx" name="phnumber" >
+              <br>
+              <label for="">Date of Birth</label>
+              <input type="text" class="form-control" [(ngModel)]="addingUser.dob" placeholder="dd-mm-yyyy" name="dob" >
+              <br>
+              <br>
+              <button type="submit" class="btn btn-primary">Add User</button>
+                </form>
+          </div>
+        </div>
+        <hr>
+        <!--/stories-->
+      </div>
+
+</div>
+</div>

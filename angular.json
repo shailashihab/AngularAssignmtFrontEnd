@@ -87,9 +87,13 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "Assignment/node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "Assignment/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+              "Assignment/node_modules/jquery/dist/jquery.min.js"
+            ]
           }
         },
         "lint": {

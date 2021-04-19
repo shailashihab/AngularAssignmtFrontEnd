@@ -1,0 +1,40 @@
+<div class="card text-center">
+  <div style="text-align: center;">
+    <circle-progress *ngIf="loader"
+    [percent]="85"
+    [radius]="100"
+    [outerStrokeWidth]="16"
+    [innerStrokeWidth]="8"
+    [outerStrokeColor]="'#78C000'"
+    [innerStrokeColor]="'#C7E596'"
+    [animation]="true"
+    [animationDuration]="300"
+  ></circle-progress>
+</div>
+<div *ngIf=!loader>
+    <div class="card-header">
+      <div class="card-body">
+        <img src="http://www.foglers.com/system/images/362/original/professional_services.jpg?1366064106" alt="">
+            </div>
+    </div>
+ 
+  <div class="card-header">
+    <h1>USERS LIST</h1>
+  </div>
+  <div *ngFor ="let user of users">
+
+    <div class="card-body">
+      <h4 class="card-title">{{user.username}}</h4>
+      <p class="card-text"></p>
+      <a (click)="SingleUser(user)" class="btn btn-primary">More Details</a>
+    
+    </div>
+    <hr>
+  </div>
+</div>
+    <div class="card-footer text-muted">
+     
+    </div>
+
+  </div>
+  

@@ -1,0 +1,28 @@
+<div class="card text-center">
+    <div class="card-header">
+      <div style="text-align: center;">
+        <circle-progress *ngIf="loader"
+        [percent]="85"
+        [radius]="100"
+        [outerStrokeWidth]="16"
+        [innerStrokeWidth]="8"
+        [outerStrokeColor]="'#78C000'"
+        [innerStrokeColor]="'#C7E596'"
+        [animation]="true"
+        [animationDuration]="300"
+      ></circle-progress>
+    </div>
+    </div>
+    <div class="card-body" *ngIf="!loader">
+      <h4 class="card-title">{{singleUser.username}}</h4>
+      <p class="card-text">{{singleUser.email}}</p>
+      <p class="card-text">{{singleUser.phnumber}}</p>
+      <p class="card-text">{{singleUser.dob}}</p>
+      <a  class="btn btn-warning" (click)="update(singleUser)">Edit Details</a>
+      <a  class="btn btn-danger" (click)="delete()">Remove User</a>
+    </div>
+    <div class="card-footer text-muted">
+     
+    </div>
+    <hr>
+  </div>
